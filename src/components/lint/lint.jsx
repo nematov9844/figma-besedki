@@ -36,7 +36,7 @@ export default function Lint() {
     <div className="flex flex-wrap justify-center md:justify-between max-w-[1440px] mx-auto">
       {data.map((item) => {
         return (
-          <div className="flex  w-full max-w-[230px] mt-4 items-center max-h-[230px]  ">
+          <div key={item.id} className="flex  w-full max-w-[230px] mt-4 items-center max-h-[230px]  ">
             <img className="h-[75px] w-[75px] m-auto" src={item.img} alt="sdfsgdh" />
             <h1 className="font-medium text-xs ">{item.title}</h1>
           </div>

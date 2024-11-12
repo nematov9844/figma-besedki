@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function TopProduct({products}) {
+export default function Aucsion({products}) {
   const navData = [
     { id: 1, name: "Беседки" },
     { id: 2, name: "Бани" },
@@ -9,6 +9,7 @@ export default function TopProduct({products}) {
     { id: 5, name: "Перголы" },
     { id: 6, name: "Бренды" },
   ]
+
 
   
   
@@ -50,7 +51,7 @@ export default function TopProduct({products}) {
                   <p className="text-gray-400 line-through text-sm">{product.oldPrice}</p>
                   <p className="text-xl font-bold text-yellow-600">{product.newPrice}</p>
                 </div>
-                <button className="bg-yellow-400 hover:bg-yellow-600 text-white font-semibold px-4 py-2 rounded-md">
+                <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-4 py-2 rounded-md">
                   Купить
                 </button>
               </div>

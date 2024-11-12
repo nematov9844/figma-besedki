@@ -1,17 +1,4 @@
-import React from 'react'
-import Header from './components/header/header'
-import Hero from './components/hero/hero'
-import Lint from './components/lint/lint'
-import Catagory from './components/category/catagory'
-import TopProduct from './components/topProcduct/topProduct'
-import Aucsion from './components/aucsion/aucsion'
-import Rewiew from './components/rewiew/rewiew'
-import NoMore from './components/nomore/noMore'
-import News from './components/news/news'
-import Footer from './components/footer/footer'
-
-export default function App() {
-  const products = [
+export  const products = [
     {
       id: "0000001",
       name: "Название товара длинное в две строки наверное",
@@ -123,19 +110,3 @@ export default function App() {
       img: "https://s3-alpha-sig.figma.com/img/4619/09e8/cc717fd41b72c36aa4ade2716f988cad?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F3YLLzTzI-WjJuYC9UHLtug15bTseF19pqKQjKfutwfmZSPNRh86BCuFbXvVdYEigSpIVZa-UDerIYxJfJzdQPtb80FFS0El~9GOjM~zm0pza6FQdCMD-uqEZyHvwVX99gzHNrHTvXe3C-6jkftPYqz1yCa7MtWUVc3zOI8YdW5j1~6MFNF9Ug0BSQlE7twRdtbJAXGYruzrL998J-O2XjTSSyIbX1fiWf08DR4jEKxRZUP-WPBxYGcLrmTnkc9Hxe4g2P4~7K5jga8NU8SMfCQaX~V0~IIjGqvcCNW12gzRCWmvagxsv-W6vOCbQ0kwCwK9o7ksKMagCIkduvZ7KQ__",
     },
   ];
-  
-  return (
-    <div>
-<Header/>
-<Hero/>
-<Lint/>
-<Catagory/>
-<TopProduct products={products}/>
-<Aucsion products={products}/>
-<Rewiew/>
-<NoMore/>
-<News/>
-<Footer/>
-    </div>
-  )
-}
